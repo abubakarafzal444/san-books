@@ -1,0 +1,119 @@
+.controllingWrapper {
+  padding-top: 70px;
+  margin: 0 15%;
+}
+
+.freeShipping {
+}
+
+.bookImg {
+  width: 100%;
+  box-shadow: 1px 3px 12px 9px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 1px 3px 12px 9px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 1px 3px 12px 9px rgba(0, 0, 0, 0.16);
+}
+.h1Heading {
+  font-weight: 600;
+}
+.authorName,
+.shippingText {
+  color: #573ba3;
+}
+.authorPara {
+  color: rgb(78, 77, 77);
+  font-size: large;
+  margin: 0;
+}
+.paraShipping {
+  color: rgb(117, 116, 116);
+  text-align: center;
+}
+.shippingIcon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.bold {
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-top: 15px;
+}
+.pricePara {
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.priceDiv {
+  width: 180px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: #573ba31f;
+  border: 1px solid #573ba3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+.displayNone {
+  display: none;
+}
+.discount {
+  color: green;
+  font-size: large;
+  padding-left: 5px;
+}
+.marketPrice {
+  color: red;
+  text-decoration: line-through;
+}
+.ourPrice {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 5px;
+  position: relative;
+  bottom: 3px;
+}
+.button {
+  padding: 12px 6px 9px 6px;
+
+  width: 190px;
+  border-radius: 8rem;
+  font-weight: bold;
+}
+.wish {
+  border: 2px solid #573ba3;
+  color: #573ba3;
+  margin-left: 15px;
+}
+.buy {
+  border: none;
+  background-color: #de2454;
+  color: white;
+}
+.icons {
+  position: relative;
+  bottom: 3px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+.scrollSection {
+  padding-top: 50px;
+}
+.summaryPara {
+  font-weight: bold;
+  padding-top: 10px;
+}
+.descriptionpara {
+  margin: 0;
+}
+.keys {
+  font-weight: bold;
+  margin: 0;
+}
+.RHeadings {
+  margin: 30px 0px 13px 0;
+  font-weight: bold;
+  font-size: xx-large;
+}
+.desPara {
+  padding: 0;
+  margin-bottom: 5px;
+}

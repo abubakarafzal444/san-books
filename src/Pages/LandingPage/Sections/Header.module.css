@@ -1,0 +1,115 @@
+.headerContainer {
+  height: 93vh;
+  background-color: #573ba3;
+  color: #ffeee6;
+  line-height: 1.5;
+  background-image: url("../../../Assets/Images/main-page-header.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: auto 57%;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+.headingContainer {
+  padding-bottom: 40px;
+}
+
+.headingContainer h1 {
+  font-size: 48px;
+}
+.headingContainer h2 {
+  font-size: 39px;
+}
+.searchDiv {
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+}
+.paddingControl {
+  display: flex;
+  justify-content: center;
+}
+
+.searchForm {
+  padding: 5px 15px;
+  height: 3.5rem;
+  background: #fafafa;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchButton {
+  padding: 8px;
+  background: #de2454;
+  border-radius: 5rem;
+  font-size: smaller;
+  border: none;
+  margin-left: 5px;
+  outline: none;
+}
+.icon {
+  color: white;
+}
+.searchInput,
+.searchInput:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: none;
+  width: 250px;
+  background-color: transparent;
+  font-weight: lighter;
+  font-size: 18px;
+  color: #573ba3;
+}
+.searchInput::placeholder {
+  color: #573ba386;
+  font-size: medium;
+}
+@media (max-width: 1000px) {
+  .searchInput,
+  .searchInput:focus,
+  textarea:focus,
+  select:focus {
+    width: 160px;
+    font-size: 15px;
+  }
+  .headerContainer {
+    background-size: auto 47%;
+  }
+  .searchForm {
+    padding: 3px 9px;
+  }
+}
+@media (max-width: 750px) {
+  .headerContainer {
+    height: 60vh;
+    padding-bottom: 7rem;
+  }
+  .searchForm {
+    padding: 3px 9px;
+  }
+  .headingContainer h1 {
+    font-size: 28px;
+  }
+  .headingContainer h2 {
+    font-size: 24px;
+  }
+  .headingContainer {
+    padding: 0 10px 20px 10px;
+  }
+}
+@media (max-width: 400px) {
+  .headerContainer {
+    padding-bottom: 2.5rem;
+    background-size: auto 37%;
+  }
+}

@@ -1,0 +1,88 @@
+.wave {
+  background-color: #2b0f42;
+  width: 100%;
+  padding: 10px 20px 0px 20px;
+}
+.rowContainer {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.logo {
+  margin-top: 30px;
+  width: 100%;
+  filter: invert(99%) sepia(0%) saturate(700%) hue-rotate(65deg)
+    brightness(114%) contrast(100%);
+}
+.linksContainer,
+.logoContainer {
+  color: white;
+}
+
+.para {
+  padding-left: 17px;
+}
+.listColumn {
+  list-style: none;
+  padding-left: 0;
+}
+.colHeading {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.iconText {
+  display: flex;
+}
+.icons {
+  font-size: 25px;
+  margin-right: 15px;
+}
+.listElement {
+  margin-bottom: 10px;
+}
+.footerRow {
+  display: flex;
+  color: white;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.footerRow p {
+  margin: 0;
+  margin: 0px 25px;
+}
+
+@media only screen and (max-width: 985px) {
+  .logo {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .linksContainer,
+  .logoContainer,
+  .listColumn,
+  .iconTextList {
+    justify-content: center;
+    text-align: center;
+  }
+  .colHeading {
+    margin: 10px 0px;
+  }
+
+  .wave {
+    font-size: 17px;
+  }
+  .footerRow p {
+    margin: 0px 10px;
+    font-size: 15px;
+  }
+  .iconText p {
+    margin: 0px;
+  }
+  .iconUl {
+    margin-top: 25px;
+  }
+  .iconText {
+    width: 100%;
+    justify-content: center;
+  }
+}

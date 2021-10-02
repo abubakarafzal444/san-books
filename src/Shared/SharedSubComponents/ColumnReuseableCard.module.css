@@ -1,0 +1,45 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.imgWrapper {
+  width: 100px;
+  background-color: rgb(214, 214, 214);
+  cursor: pointer;
+}
+.imgWrapper:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  transform: translate(0px, -2px);
+}
+.textWrapper {
+  width: 260px;
+  padding: 2px 16px;
+}
+.cardImg {
+  width: 100px;
+  height: 140px;
+}
+.imgWrapper:hover {
+  background-color: rgb(230, 230, 230);
+  transform: translate(0px -10px);
+}
+.name {
+  font-weight: bold;
+  margin-bottom: -3px;
+}
+.Price {
+  display: inline-block;
+}
+.marketPrice {
+  text-decoration: line-through;
+  font-size: 13px;
+  color: red;
+}
+.ourPrice {
+  position: relative;
+  left: 2px;
+  bottom: 4px;
+  font-size: 19px;
+  font-weight: bolder;
+}

@@ -1,0 +1,168 @@
+.slideSectionWrap {
+  text-align: center;
+  padding: 40px 0 0px 0;
+}
+
+.sectionHeadings::before,
+.sectionHeadings::after {
+  display: inline-block;
+  content: "";
+  border-bottom: 0.3rem solid #de2454;
+  width: 8rem;
+  margin: 0 1rem;
+  transform: translateY(-0.3rem);
+}
+.slideSectionButton {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 6px;
+  margin-right: 20px;
+}
+.viewAllButton {
+  background-color: #de2454;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.buttonSpan {
+  font-size: 17px;
+}
+.arrowIcon {
+  font-size: 25px;
+  position: relative;
+  bottom: 1px;
+}
+.viewAllButton:hover,
+.viewAllButton:active {
+  background-color: #573ba3;
+  /* #2b0f42 */
+}
+.cardscontainer {
+  display: flex;
+  border-radius: 6px;
+  color: #333;
+  background-color: white;
+  overflow-x: auto;
+  position: relative;
+}
+.cardscontainer::-webkit-scrollbar {
+  display: none;
+}
+.controlDiv {
+  margin: 0px 5% 40px 5%;
+}
+.spacerimg {
+  margin: 65px 0px 0px 0px;
+}
+
+.spacerimg__img {
+  width: 100%;
+}
+.layoutWrap {
+  padding-top: 40px;
+}
+
+.displayNone {
+  display: none;
+}
+.displayNoneControl {
+  padding-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .controlDiv {
+    margin: 2.5px 1% 40px 1%;
+  }
+}
+@media (max-width: 1000px) {
+  .viewAllButton {
+    padding: 2px 6px 5px 6px;
+  }
+  .buttonSpan {
+    font-size: 13px;
+  }
+  .arrowIcon {
+    font-size: 20px;
+    position: relative;
+    bottom: 1px;
+  }
+  .slideSectionWrap {
+    padding: 25px 0 0px 0;
+  }
+  .sectionHeadings {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner {
+    display: block;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+  }
+  .bannerLayout1 {
+    padding-top: 40px;
+  }
+  .bannerLayout2 {
+    padding-top: 5px;
+  }
+  .signupButton {
+    margin-bottom: 30px;
+  }
+}
+
+/* important */
+@media (max-width: 730px) {
+  .sectionHeadings::before,
+  .sectionHeadings::after {
+    width: 5rem;
+    margin: 0 0.5rem;
+  }
+  .sectionHeadings {
+    font-size: 20px;
+  }
+  .layoutWrap {
+    padding-top: 20px;
+  }
+  .spacerimg {
+    margin: 35px 0px 0px 0px;
+  }
+  .displayNoneControl {
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 430px) {
+  .sectionHeadings::before,
+  .sectionHeadings::after {
+    width: 3rem;
+  }
+  .sectionHeadings {
+    font-size: 18px;
+  }
+  .slideSectionButton {
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+  .viewAllButton {
+    padding: 0.5px 4px 1.5px 4px;
+  }
+  .buttonSpan {
+    font-size: 10px;
+  }
+  .arrowIcon {
+    font-size: 18px;
+    position: relative;
+    bottom: 1px;
+  }
+}
+@media (max-width: 350px) {
+  .sectionHeadings::before,
+  .sectionHeadings::after {
+    width: 1.5rem;
+  }
+  .sectionHeadings {
+    font-size: 15px;
+  }
+}

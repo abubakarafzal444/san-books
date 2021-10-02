@@ -1,0 +1,33 @@
+.banner {
+  background-color: #de24533a;
+  padding: 40px 5px 40px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Koh Santepheap";
+}
+.bannerLayout1 {
+  justify-content: right;
+  margin-right: 10px;
+}
+.bannerHeading {
+  font-weight: 500;
+}
+.bannerLayout2 {
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.signupButton {
+  padding: 3px 35px;
+  border-radius: 555px;
+  border: 1px solid #573ba3;
+  background-color: #573ba3;
+  color: white;
+  font-weight: bolder;
+  width: 170px;
+  height: 45px;
+}
+.signupButton:hover {
+  background-color: #674faa;
+}
