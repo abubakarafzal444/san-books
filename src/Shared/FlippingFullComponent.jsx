@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../Pages/LandingPage/Sections/ScrollCategoriesAndFullFlipping.module.css";
 import { BiRightArrowCircle } from "react-icons/bi";
+
 import RowCardLayout from "./RowCardLayout";
 const FlippingFullComponent = (props) => {
   return (

@@ -106,6 +106,8 @@ const CombinedCartDisplay = () => {
 
         <div className={styles.lrgWrapper}>
           <button
+            onClick={handleOrder}
+            type="submit"
             className={`${styles.checkoutLarge}
               ${itemToAdd.length === 0 ? styles.blur : ""}`}
           >

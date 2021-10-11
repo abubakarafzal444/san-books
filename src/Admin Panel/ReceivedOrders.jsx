@@ -106,7 +106,7 @@ const ReceivedOrders = () => {
                 <tbody>
                   <tr>
                     <td>1</td>
-                    {array1.map((item, index) => (
+                    {array1?.map((item, index) => (
                       <td key={index}>{item}</td>
                     ))}
                   </tr>
