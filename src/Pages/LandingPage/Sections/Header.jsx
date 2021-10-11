@@ -15,15 +15,15 @@ const HeaderComponent = () => {
               <form
                 className={styles.searchForm}
                 role="search"
-                spellcheck="false"
+                spellCheck="false"
               >
-                <label className={styles.searchLabel} for="search"></label>
+                <label className={styles.searchLabel} htmlFor="search"></label>
                 <input
                   className={styles.searchInput}
                   id="search"
                   type="search"
                   placeholder="Search..."
-                  autofocus
+                  autoFocus
                   required
                 />
                 <button className={styles.searchButton} type="submit">

@@ -1,5 +1,5 @@
 .card {
-  flex: 1 0 200px;
+  flex: 1 0 210px;
   background: rgb(255, 255, 255);
   margin: 5px;
   overflow: hidden;
@@ -49,6 +49,7 @@
 }
 .card__picture {
   background-size: cover;
+  width: 250px;
   height: 20rem;
   background-blend-mode: screen;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -179,7 +180,9 @@
   font-weight: bolder;
   font-size: 20px;
   position: relative;
-  bottom: 5px;
+  bottom: 2px;
+  margin: 0;
+  padding: 0;
 }
 
 .Display {
@@ -194,4 +197,5 @@
 .buttonGroupPosition {
   position: absolute;
   bottom: 10px;
+  left: 10px;
 }

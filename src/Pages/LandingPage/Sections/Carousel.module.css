@@ -1,5 +1,6 @@
 .spaceControl {
   margin: 50px 0px 10px 0px;
+  background-color: rgb(231, 231, 231);
 }
 @media (max-width: 730px) {
   .spaceControl {

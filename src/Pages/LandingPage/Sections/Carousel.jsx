@@ -14,7 +14,12 @@ function ControlledCarousel() {
 
   return (
     <div className={styles.spaceControl}>
-      <Carousel interval="2000" activeIndex={index} onSelect={handleSelect}>
+      <Carousel
+        interval="2000"
+        activeIndex={index}
+        controls={false}
+        onSelect={handleSelect}
+      >
         <Carousel.Item>
           <img
             className="d-block w-100"

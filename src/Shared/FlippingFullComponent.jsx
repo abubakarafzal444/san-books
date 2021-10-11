@@ -29,11 +29,10 @@ const FlippingFullComponent = (props) => {
       <div className={styles.cardscontainer}>
         {props.DataArray.map((card, index) => (
           <RowCardLayout
+            key={props.id}
             badgeContent={props.BadgeContent}
-            img={
-              props.BookImgArray[index] ||
-              "https:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    source.unsplash.com/270x400/?books"
-            }
+            img={card.Img}
+            id={card.id}
             title={card.Name}
             content={card.description}
             rating={card.AverageRating}
@@ -42,6 +41,7 @@ const FlippingFullComponent = (props) => {
             ourprice={card.ourPrice}
             author={card.Author}
             quantity={card.Stock}
+            link={props.link}
           />
         ))}
       </div>

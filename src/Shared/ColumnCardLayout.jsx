@@ -4,17 +4,18 @@ import ColumnReuseableCard from "./SharedSubComponents/ColumnReuseableCard";
 import RowCardLayout from "./RowCardLayout";
 
 const ColumnCardLayout = (props) => {
-  const requiredDataArray1 = [props.Array[0], props.Array[1], props.Array[2]];
-  const requiredDataArray2 = [props.Array[3], props.Array[4], props.Array[5]];
-  const requiredDataArray3 = [props.Array[6], props.Array[7], props.Array[8]];
+  const requiredDataArray1 = props.Array.slice(0, 3);
+
+  const requiredDataArray2 = props.Array.slice(3, 6);
+
+  const requiredDataArray3 = props.Array.slice(6, 9);
 
   var smDataArray = requiredDataArray1.concat(requiredDataArray2);
-  if (props.extended) {
+  if (props.extended === true) {
     smDataArray = requiredDataArray1
       .concat(requiredDataArray2)
       .concat(requiredDataArray3);
   }
-  const imgArray = props.imgArray;
 
   return (
     <div className={styles.sectionWrapper}>
@@ -23,11 +24,14 @@ const ColumnCardLayout = (props) => {
           <div className={styles.cardWrap}>
             {requiredDataArray1.map((card, index) => (
               <ColumnReuseableCard
-                img={card.img || imgArray[index]}
+                key={card.id}
+                id={card.id}
+                img={card.Img}
                 name={card.Name}
                 author={card.Author}
                 ourprice={card.ourPrice}
                 marketprice={card.MarketPrice}
+                link={props.link}
               />
             ))}
           </div>
@@ -37,11 +41,14 @@ const ColumnCardLayout = (props) => {
           <div className={styles.cardWrap}>
             {requiredDataArray2.map((card, index) => (
               <ColumnReuseableCard
-                img={card.img || imgArray[index + 3]}
+                key={card.id}
+                id={card.id}
+                img={card.Img}
                 name={card.Name}
                 author={card.Author}
                 ourprice={card.ourPrice}
                 marketprice={card.MarketPrice}
+                link={props.link}
               />
             ))}
           </div>
@@ -53,11 +60,14 @@ const ColumnCardLayout = (props) => {
             <div className={styles.cardWrap}>
               {requiredDataArray3.map((card, index) => (
                 <ColumnReuseableCard
-                  img={card.img || imgArray[index]}
+                  key={card.id}
+                  id={card.id}
+                  img={card.Img}
                   name={card.Name}
                   author={card.Author}
                   ourprice={card.ourPrice}
                   marketprice={card.MarketPrice}
+                  link={props.link}
                 />
               ))}
             </div>
@@ -69,15 +79,19 @@ const ColumnCardLayout = (props) => {
       <div className={styles.smallScreen}>
         {smDataArray.map((card, index) => (
           <RowCardLayout
-            img={
-              imgArray[index] || "https://source.unsplash.com/270x400/?books"
-            }
+            key={card.id}
+            img={card.Img}
+            id={card.id}
             title={card.Name}
             content={card.Author}
             badgeContent={"Recommended"}
             rating={card.AverageRating}
             marketprice={card.MarketPrice}
             ourprice={card.ourPrice}
+            reviews={card.Reviews}
+            author={card.Author}
+            quantity={card.Stock}
+            link={props.link}
           />
         ))}
       </div>

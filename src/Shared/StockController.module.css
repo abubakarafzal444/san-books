@@ -63,11 +63,21 @@
   bottom: 3px;
 }
 .arrowDownIcon {
-  font-size: 15px;
   position: relative;
   bottom: 3px;
 }
 .cancelIcon {
   position: relative;
   bottom: 2px;
+}
+@media (max-width: 650px) {
+  .stock {
+    font-size: x-small;
+  }
+  .stockLow {
+    font-size: x-small;
+  }
+  .stockFinish {
+    font-size: x-small;
+  }
 }

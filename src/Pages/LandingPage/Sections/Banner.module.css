@@ -31,3 +31,19 @@
 .signupButton:hover {
   background-color: #674faa;
 }
+@media (max-width: 800px) {
+  .banner {
+    display: block;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+  }
+  .bannerLayout1 {
+    padding-top: 40px;
+  }
+  .bannerLayout2 {
+    padding-top: 5px;
+  }
+  .signupButton {
+    margin-bottom: 30px;
+  }
+}
